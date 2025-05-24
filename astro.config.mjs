@@ -14,7 +14,8 @@ export default defineConfig({
     service: passthroughImageService(),
   },
   adapter: cloudflare({
-    imageService: "passthrough",
+    // imageService: "passthrough",
+    imageService: "compile",
     platformProxy: {
       enabled: true,
     },
